@@ -27,8 +27,11 @@ function Home() {
                 <div className="d-flex justify-content-center flex-wrap">
                     {lastProducts.map((product) => (
                         <ProductPreview key={product._id} {...product} />
+             
                     ))}
                 </div>
+               
+
                 <div>
                     <Link to="/category/all" style={{ textAlign: "right", display: "block", textDecoration: "none" }}>
                         See more {">>"}

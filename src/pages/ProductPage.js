@@ -21,6 +21,7 @@ function ProductPage() {
 
     const handleDragStart = (e) => e.preventDefault();
     useEffect(() => {
+        
         axios.get(`/products/${id}`).then(({ data }) => {
             setProduct(data.product);
             setSimilar(data.similar);
